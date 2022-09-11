@@ -17,3 +17,9 @@ newQuote.setAttribute('id', 'eowyn');
 const article = document.getElementById('quotes');
 article.appendChild(newQuote);
 
+const button = document.getElementById('my-btn');
+const showQuote = (ev) => {
+  console.log(ev);
+  window.alert('\"Nobody tosses a dwarf!\"');
+}
+button.addEventListener('click', showQuote);
