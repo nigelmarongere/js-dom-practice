@@ -17,9 +17,18 @@ newQuote.setAttribute('id', 'eowyn');
 const article = document.getElementById('quotes');
 article.appendChild(newQuote);
 
-const button = document.getElementById('my-btn');
-const showQuote = (ev) => {
-  console.log(ev);
-  window.alert('\"Nobody tosses a dwarf!\"');
+const clickMe = document.getElementById('my-btn');
+const showQuote = ev => window.alert('\"Nobody tosses a dwarf!\"');
+clickMe.addEventListener('click', showQuote);
+
+const secretMsg = document.getElementById('to-log');
+const logSecret = ev => console.log('There are no secrets!');
+secretMsg.addEventListener('click', logSecret);
+
+const h = document.getElementById('header');
+header.classList.add('green');
+
+console.log(quotes);
+for (let quote of quotes){
+  quote.classList.add('bold');
 }
-button.addEventListener('click', showQuote);

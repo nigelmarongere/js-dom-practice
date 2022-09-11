@@ -1,3 +1,11 @@
 body {
   background: lightgrey;
 }
+
+.green{
+  color: green;
+}
+
+.bold{
+  font-weight: bold;
+}
